@@ -1,430 +1,216 @@
-* {
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: "JosefinSans";
+    src: url(images/JosefinSans-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0px !important;
+}
+body{
 }
 
-.mains {
-    position: relative;
+.bgclr{
+    background-color: #030a13 !important;
 }
 
-.navbar {
-    --bs-navbar-padding-x: 0 !important;
-    --bs-navbar-padding-y: 0 !important;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 20px;
+        cursor: pointer;
+        
 }
 
-.bg-body-tertiary {
-    background-color: white !important;
-
+.login-container {
+    height: 100vh;
 }
-
-.navbar-brand img {
-    width: 40px;
+.my-con{
 }
-
-a.nav-link.icons-1 {
-    width: 90px;
-}
-
-
-.icons-1 .nav-item {
-    width: 100px !important;
-    text-align: center;
-}
-
-.icons-1 i {
-    font-size: 25px;
-}
-
-a.nav-link.icons-2 {
-    width: 55px !important;
-    height: 55px !important;
-    text-align: center !important;
-}
-
-.icons-2 i {
-    font-size: 25px;
-    background-color: #e4e6eb;
-    padding: 10px;
-    border-radius: 50px;
-}
-
-.searches input {
-    border-radius: 20px;
-    background-color: #e4e6eb;
-}
-
-.flx {
-    display: flex;
-    background-color: #f0f2f5;
-    flex-wrap: wrap;
-}
-
-.flx1 {
-    flex: 0.25;
-    background-color: #f0f2f5;
-
-    padding: 25px;
-}
-
-.flx2 {
-
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin: 30px 70px 0px 70px;
+.my-nav{
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    /* padding-top: 25px */
-}
-
-.flx-2-bg {
-
-    flex: 0.5;
-    background-color: #f0f2f5;
-}
-
-.flx3 {
-    flex: 0.25;
-    background-color: #f0f2f5;
-    padding: 25px;
-}
-
-.flx-child {
-    display: flex;
-    transition: 0.2s;
-    padding: 10px;
-    cursor: pointer;
 
 }
-
-.flx-child:hover {
-    background-color: #e4e6eb;
-    border-radius: 8px;
-}
-
-.flx-child img {
-    width: 35px;
-    border-radius: 20px;
-}
-
-.flx-child p {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 600;
-    padding-left: 10px;
-    color: rgb(56, 56, 56);
-}
-
-
-.flx-child-2 {
-    display: flex;
-    transition: 0.2s;
-    padding: 10px;
-    cursor: pointer;
-
-}
-
-.flx-child-2:hover {
-    background-color: #e4e6eb;
-    border-radius: 8px;
-}
-
-.flx-child-2 img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50px;
-    background-color: white;
-    border: 2px solid rgb(211, 211, 211);
-    padding: 1px;
-
-}
-
-.flx-child-2 p {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 600;
-    padding-left: 10px;
-    color: rgb(56, 56, 56);
-
-}
-
-.flx-parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-    /* padding-bottom: 15px; */
-
-}
-
-
-.icon-text {
-    display: flex;
-    flex: 0.33;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    height: 50px;
-}
-
-.icon-text p {
-    margin: 0;
-    padding-left: 10px;
-    font-weight: 600;
-}
-
-.icon-text img {
-    width: 20px;
-    height: 20px;
-}
-
-.sec {
-    border-bottom: 2px solid #1b74e4;
-}
-
-.stories-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.stories-box {
-    /* width: 200px;
-    height: 200px; */
-    padding: 15px 5px 15px 5px;
-    position: relative;
-}
-
-.stories-box img {
-    width: 130px;
-    height: 190px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    opacity: 0.8;
-
-
-}
-
-.stories-box-small-img {
-    position: absolute;
-    top: 20px;
-    padding-left: 10px;
-}
-
-.stories-box-small-img img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50px;
-    background-color: white;
-    border: 4px solid rgb(255, 255, 255);
-
-}
-
-.stories-box-small-text p {
-    position: absolute;
-    top: 170px;
+.my-nav ul li a{
     color: white;
-    font-weight: bold;
-    font-size: small;
-    padding-left: 8px;
+    font-family:  "JosefinSans";
 }
-
-.img-input {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+.my-nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.479);
 
 }
-
-.img-input-1 {
-    flex: 0.1;
-
-}
-
-.img-input-1 img {
-
-    width: 35px;
-    border-radius: 20px;
+.my-slider{
+    border-radius: 10px !important;
 
 }
-
-.img-input-2 {
-    flex: 0.9;
-}
-
-.img-input-2 p {
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: #f0f2f5;
-    padding: 9px 10px;
+.my-btn {
+    background-color: orange !important;
     width: 100%;
-    margin-bottom: 0;
-}
-
-.img-input {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-
-}
-
-.post-main {
-
-    background-color: rgb(255, 255, 255);
-    /* display: flex;
-    flex-direction: column; */
-    margin-top: 30px;
-    margin: 30px 70px 0px 70px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    /* padding-top: 25px */
-}
-
-.post-head {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-
-}
-
-.post-head-1 {
-    flex: 0.07;
-}
-
-.post-head-1 img {
-    width: 35px;
-    border-radius: 20px;
-}
-
-.post-head-2 {
-    flex: 0.93;
-}
-
-.post-head-2 p {
-    margin: 0;
-    font-weight: bold;
-    padding-left: 10px;
-}
-
-.icons i {
-    font-size: larger;
-}
-
-.post-content {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./img/icons/content-bg-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-.popup-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff9f;
-    display: none;
-}
-.first-main{
-
-}
-.popup-box {
-    width: 500px;
+    border-color: orange !important;
     
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.popup-1 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+.my-header {
+    background-color: #030a13; 
+    
+    
+}
+
+.theme-btn {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 1px solid rgba(255, 255, 255, 0.226) !important;
+    width: 100px;
+    font-family:  "JosefinSans" !important;
 
 }
 
-.popup-1 p {
-    text-align: center;
-    margin: 0;
-    font-size: large;
-    font-weight: bold;
+.navbar-brand {
+    margin-bottom: 5px !important;
+}
+.navbar-brand img{
+    width: 110px;
+}
+.fsw{
+    display: flex !important;
+    
 }
 
-.popup-2 {
+
+.my-card-2{
+    background-color: rgba(95, 158, 160, 0) !important;
+    padding-bottom:20px !important ;
+}
+.my-card {
+    height: 150px !important;
     display: flex;
-    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.151) !important;
+    margin-bottom: 10px !important;
+  
+    
 }
-
-.popup-2 img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
-}
-
-.popup-2-para {
-    margin-left: 10px;
-}
-
-.popup-2-para p {
-    margin: 0;
-}
-
-.popup-2-para p i {
-    font-size: 10px;
-    padding-right: 5px;
-}
-
-.popup-2-para-2 {
-    display: flex;
-    align-items: center;
-    background-color: #e4e6eb;
-    padding: 2px 2px 2px 6px;
-    border-radius: 10px;
-}
-
-.dsaw {
-    font-size: 30px;
-    padding-left: 8px;
-}
-
-.popup-3 textarea {
-    width: 95%;
-    margin: 10px;
-    padding: 10px;
-    font-size: larger;
-    border: none;
-}
-
-.popup-btn{
-margin: 10px;
+.my-card>div>i{
+    color: rgb(255, 255, 255) !important;
+   font-size: 40px;
+   padding-bottom: 10px;
+} 
+.my-card>div>h4 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
 
 }
-.popup-btn button{
+
+.my-card>div>span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.432);
+}
+
+.theme-btn-a {
+    background-color: #030a13 !important;
     width: 100%;
-    border: none;
-    border-radius: 5px;
+    border-color: #030a13 !important;
+    margin-top: 10px;
+}
+
+.product-price {
+    color: #030a13;
+    font-size: 16px;
     font-weight: bold;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color:#1b74e4;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.del-price {
+    color: grey;
+    font-weight: normal;
+}
+
+.product-card {
+    position: relative;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+.product-card img{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+}
+.sale-badge {
+    background-color: 030a13;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: #030a13;
+}
+.my-item{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: flex-end !important;
+}
+.carousel-item img{
+    width: 100% !important;
+  
+}
+
+.heading h3{
+    font-size: 40px !important;
+}
+.my-head{
+    display: flex !important;
+ justify-content: center;
+     flex-direction: column !important;
+}
+.h4 h4{
     color: white;
+}
+.h1 h1{
+    color: white;
+    font-size: 60px;
+}
+.card-brand{
+    color: #d8bd23;
+    font-weight: 100;
+    font-family: "JosefinSans";
+}
+
+@media screen and (max-width:500px) {
+    
+    .carousel-item img{
+        width: 300px !important;
+      
     }
+   
+.my-head{
+    margin-bottom: 20px;
+}
+    .h4 h4{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    .h1 h1{
+        color: white;
+        font-size: 35px;
+        text-align: center;
+
+    }
+    .seemore-btn {
+        text-align: center;
+    }
+    .my-item{
+        align-items: center !important;
+
+    }
+    
+}
