@@ -190,13 +190,14 @@ for (var key in watch) {
             }
     }
     function filter(brands) {
+        main.innerHTML = "";
         for (var key in watch) {
             for (var key1 in watch[key]) {
               
                     
                     if(brands === key){
-                        var mains = document.getElementById("filter-cards")
-                       mains.innerHTML += `  
+                        
+                       main.innerHTML += `  
                  
                            
                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
@@ -216,28 +217,6 @@ for (var key in watch) {
                     }}
                 }
   
-                main.innerHTML = ""
 
         }
         
-                // if(brands == watch){
-            // var main = document.getElementById("my-card")
-            // main.innerHTML += `  
-      
-                
-            // <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-            //     <div class="card p-0 product-card">
-            //         <img src="${watch[key][key1].img}" class="card-img-top" alt="...">
-            //         <div class="card-body">
-            //             <p class="card-brand">${watch[key][key1].company}</p>
-            //             <h6 class="card-title">${watch[key][key1].model}</h6>
-            //             <span class="product-price">Rs: ${watch[key][key1].price}/- </span>
-            //             <br />
-            //         </div>
-            //     </div>
-            //     </div>
-            //     `
-        // }
-    // }
-
-     
